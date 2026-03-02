@@ -17,5 +17,5 @@ wget https://raw.githubusercontent.com/Himashana/TRELLIS.2_setup/refs/heads/main
 ## Step 2: Execute the script in interactive mode
 
 ```
-bash -i setup.sh
+bash -i setup.sh <Destination Folder>
 ```
