@@ -2,6 +2,18 @@
 
 # This script sets up the TRELLIS.2 environment, including cloning the repository, installing Miniconda, setting up the environment, and installing necessary dependencies.
 
+# Get the destination directory from the parameter passed to the script, or throw an error if it's not provided
+if [ -z "$1" ]; then
+  echo "Error: No destination directory provided. Please provide a destination directory as a parameter."
+  exit 1
+fi\
+else
+  DEST_DIR="$1"
+fi
+
+# Navigate to the destination directory
+cd "$DEST_DIR"
+
 # Clone the TRELLIS.2 repository
 git clone -b main https://github.com/microsoft/TRELLIS.2.git --recursive
 cd TRELLIS.2
