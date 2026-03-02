@@ -20,3 +20,9 @@ wget https://raw.githubusercontent.com/Himashana/TRELLIS.2_setup/refs/heads/main
 bash -i setup.sh <Destination_Folder>
 ```
 
+## Step 3: Execute
+
+Ensure that you have exposed port 7860 in RunPod
+```
+GRADIO_SERVER_NAME="0.0.0.0" python app.py
+```
