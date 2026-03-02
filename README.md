@@ -24,5 +24,7 @@ bash -i setup.sh <Destination_Folder>
 
 Ensure that you have exposed port 7860 in RunPod
 ```
+conda activate trellis2
 GRADIO_SERVER_NAME="0.0.0.0" python app.py
 ```
+
