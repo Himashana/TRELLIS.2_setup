@@ -6,10 +6,9 @@
 if [ -z "$1" ]; then
   echo "Error: No destination directory provided. Please provide a destination directory as a parameter."
   exit 1
-fi\
-else
-  DEST_DIR="$1"
 fi
+
+DEST_DIR="$1"
 
 # Navigate to the destination directory
 cd "$DEST_DIR"
