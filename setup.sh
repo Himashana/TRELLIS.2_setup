@@ -8,6 +8,10 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
+echo "You might need to perform manual inputs and accept licence agreements throughout the process. Therefore, read the instructions carefully and proceed accordingly. It is a requirement to have access to dinov3-vitl16-pretrain-lvd1689m and RMBG-2.0 at HuggingFace, and you will be asked to enter the HuggingFace Access Token during the setup. Also, ensure that you are running the script in interactive mode with bash -i setup.sh"
+echo "Press Enter to continue..."
+read
+
 DEST_DIR="$1"
 
 # Navigate to the destination directory
